@@ -3,6 +3,7 @@
     "displayName": "uniapp-snippet",
     "description": "uniapp片段提示",
     "version": "0.0.1",
+    "publisher": "dlhtx",
     "icon": "images/uni.jpg",
     "engines": {
         "vscode": "^1.40.0"
