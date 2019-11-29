@@ -12,6 +12,10 @@
         "name": "dlhtx",
         "blog": "http://dlhtx.zicp.vip:9090"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DLHTX/vscode-uniapp-snippets"
+    },
     "keywords": [
         "uniapp",
         "snippet"
