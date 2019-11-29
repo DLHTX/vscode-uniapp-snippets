@@ -1,0 +1,34 @@
+{
+    "name": "uniapp-snippet",
+    "displayName": "uniapp-snippet",
+    "description": "uniapp片段提示",
+    "version": "0.0.1",
+    "icon": "images/uni.jpg",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "author": {
+        "email": "949729789@qq.com",
+        "name": "dlhtx",
+        "blog": "http://dlhtx.zicp.vip:9090"
+    },
+    "keywords": [
+        "uniapp",
+        "snippet"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}

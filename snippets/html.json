@@ -1,0 +1,214 @@
+{
+    "view": {
+        "prefix": "view",
+        "body": "<view>$2</view>$3",
+        "description": "视图容器"
+    },
+    "scroll-view": {
+        "prefix": "scroll-view",
+        "body": "<scroll-view scroll-${1:x}=\"$2\">$3</scroll-view>$4",
+        "description": "可滚动视图区域"
+    },
+    "swiper": {
+        "prefix": "swiper",
+        "body": [
+            "<swiper class=\"swiper\" :indicator-dots=\"$1\" :autoplay=\"$2\" :interval=\"$3\" :duration=\"$4\">",
+            "\t<swiper-item>",
+            "\t\t<view class=\"swiper-item uni-bg-red\">A</view>",
+            "\t</swiper-item>",
+            "\t\t</swiper>"
+        ],
+        "description": "滑块视图容器"
+    },
+    "movable-area": {
+        "prefix": "movable-area",
+        "body": [
+            "<movable-area>",
+                "\t<movable-view :x=\"$1x\" :y=\"$2y\" direction=\"all\" @change=\"$3onChange\">text</movable-view>",
+            "</movable-area>"
+        ],
+        "description": "movable-view 的可移动区域"
+    },
+    "movable-view": {
+        "prefix": "movable-view",
+        "body": [
+            "<movable-view :x=\"$1x\" :y=\"$2y\" direction=\"all\" @change=\"$3onChange\">text</movable-view>",
+        
+        ],
+        "description": "可移动的视图容器"
+    },
+    "cover-view": {
+        "prefix": "cover-view",
+        "body": [
+            "<cover-view>$1</cover-view>"
+        ],
+        "description": "覆盖在原生组件上的文本视图"
+    },
+    "cover-image": {
+        "prefix": "coverImage",
+        "body": [
+            "<cover-image src=\"$1\"></cover-image>"
+        ],
+        "description": "覆盖在原生组件上的图片视图"
+    },
+
+    "icon": {
+        "prefix": "icon",
+        "body": "<icon type=\"$1\" size=\"$2\" color=\"$3\" />$4",
+        "description": "图标"
+    },
+    "text": {
+        "prefix": "text",
+        "body": "<text>$1</text>$2",
+        "description": "文本"
+    },
+    "rich-text": {
+        "prefix": "rich-text",
+        "body": "<rich-text :nodes=\"$1\"></rich-text>",
+        "description": "富文本"
+    },
+    "textarea": {
+        "prefix": "textarea",
+        "body": "<textarea placeholder=\"${1:placeholder}\" />"
+    },
+    "progress": {
+        "prefix": "progress",
+        "body": "<progress percent=\"$1\" backgroundColor=\"$2\" stroke-width=\"${3:6}\" ${4:active} ${5:show-info} />$6",
+        "description": "进度条"
+    },
+    "label": {
+        "prefix": "label",
+        "body": "<label class=\"uni-list-cell uni-list-cell-pd\" v-for=\"$1item in $2checkboxItems\" :key=\"$3item.name\">",
+        "description": "用来改进表单组件的可用性，使用for属性找到对应的id，或者将控件放在该标签下，当点击时，就会触发对应的控件。"
+    },
+    "button": {
+        "prefix": "button",
+        "body": "<button type=\"${1:default}\" size=\"${2:defaultSize}\" loading=\"${3:loading}\" plain=\"${4:plain}}\" disabled=\"${5:disabled}\" bindtap=\"${6:defaultTap}\" hover-class=\"${6:other-button-hover}\"> Button </button>",
+        "description": "按钮"
+    },
+    "editor": {
+        "prefix": "editor",
+        "body": " <editor :placeholder=\"$1placeholder\" @ready=\"$2onEditorReady\"></editor>",
+        "description": "富文本编辑器，可以对图片、文字格式进行编辑和混排"
+    },
+    "checkbox-group": {
+        "prefix": "checkboxGroup",
+        "body": [
+            "<checkbox-group>",
+            "\t<label>",
+            "\t\t<checkbox value='' />",
+            "\t</label>",
+            "</checkbox-group>$5"
+        ],
+        "description": "多项选择器"
+    },
+
+
+    "radio-group": {
+        "prefix": "radioGroup",
+        "body": [
+            "<radio-group>",
+            "\t<label>",
+            "\t\t<radio value= />",
+            "\t</label>",
+            "</radio-group>$5"
+        ],
+        "description": "多项选择器"
+    },
+    "form": {
+        "prefix": "form",
+        "body": "<form @submit=\"$1\" @reset=\"$2\">$3</form>$4",
+        "description": "表单"
+    },
+    "input": {
+        "prefix": "input",
+        "body": "<input type=\"$1\" placeholder=\"$2\" ${4:password} />$5",
+        "description": "自动聚焦的input"
+    },
+    "picker-view":{
+        "prefix": "picker-view",
+        "body": [
+            "<picker-view v-if=\"visible\" :indicator-style=\"$1indicatorStyle\" :value=\"$2value\" @change=\"$3bindChange\">",
+                "\t<picker-view-column>",
+                    "\t\t<view class=\"item\" v-for=\"($4item,index) in years\" :key=\"index\">{{$5item}}年</view>",
+                "\t\t</picker-view-column>",
+            "</picker-view>"
+        ],
+        "description": "嵌入页面的滚动选择器"
+    },
+    "picker-time": {
+        "prefix": "pickerTime",
+        "body": [
+            "<picker mode=\"time\" start=\"${1:xx:xx}\" end=\"${2:xx:xx}\">$3</picker>$4"
+        ],
+        "description": "时间选择器"
+    },
+    "picker-date": {
+        "prefix": "pickerDate",
+        "body": [
+            "<picker mode=\"date\" start=\"${1:xxxx-xx-xx}\" end=\"${2:xxxx-xx-xx}\">$3</picker>$4"
+        ],
+        "description": "日期选择器"
+    },
+    "slider": {
+        "prefix": "slider",
+        "body": "<slider min=\"$1\" max=\"$2\" step=\"$3\" />$4",
+        "description": "滑动选择器"
+    },
+    "switch": {
+        "prefix": "switch",
+        "body": "<switch checked=\"${1:false}\" />$2",
+        "description": "开关选择器"
+    },
+    "actoin-sheet": {
+        "prefix": "actionSheet",
+        "body": [
+            "<action-sheet>",
+            "\t<block wx:for=\"{{${1:actionSheetItems}}}\">",
+            "\t\t<action-sheet-item class=\"item\" data-name=\"{{${2:item}}}\" />{{${2:item}}}</action-sheet-item>",
+            "\t</block>",
+            "</action-sheet>$3"
+        ],
+        "description": "从屏幕底部出现的菜单表"
+    },
+    "modal": {
+        "prefix": "modal",
+        "body": "<modal title=\"$1\" confirm-text=\"$2\" cancel-text=\"$3\" bindconfirm=\"$4\" bindcancel=\"$5\">$6</modal>$7",
+        "description": "模态弹窗"
+    },
+    "toast": {
+        "prefix": "toast",
+        "body": "<toast>$1</toast>$2",
+        "description": "消息提示框"
+    },
+    "loading": {
+        "prefix": "loading",
+        "body": "<loading>$1</loading>$2",
+        "description": "加载提示"
+    },
+    "navigator": {
+        "prefix": "navigator",
+        "body": "<navigator url=\"$1\" ${2:redirect} hover-class=\"${3:className}\">$4</navigator>$5",
+        "description": "导航"
+    },
+    "audio": {
+        "prefix": "audio",
+        "body": "<audio src=\"$1\" ${2:controls} ${3:loop}></audio>$2",
+        "description": "音频"
+    },
+    "image": {
+        "prefix": "image",
+        "body": "<image src=\"$1\" mode=\"$2\" />$2",
+        "description": "图片"
+    },
+    "video": {
+        "prefix": "video",
+        "body": "<video src=\"$1\"></video>$2",
+        "description": "视频"
+    },
+    "map": {
+        "prefix": "map",
+        "body": "<map longitude=\"$1\" latitude=\"$2\"></map>$3",
+        "description": "地图"
+    }
+}
