@@ -175,7 +175,7 @@
         "prefix": "uni.navigateTo()",
         "body": [
             "uni.navigateTo({",
-                "\t url: 'test?id=1&name=uniapp$0';",
+                "\turl: 'test?id=1&name=uniapp$0'",
             "});$0"
         ],
         "description": "uniapp-跳转到应用内的某个页面"
@@ -184,7 +184,7 @@
         "prefix": "uni.redirectTo()",
         "body": [
             "uni.redirectTo({",
-                "\t url: 'test?id=1&name=uniapp$0';",
+                "\turl: 'test?id=1&name=uniapp$0'",
             "});$0"
         ],
         "description": "uniapp-关闭当前页面跳转到应用内的某个页面"
@@ -193,7 +193,7 @@
         "prefix": "uni.reLaunch()",
         "body": [
             "uni.reLaunch({",
-                "\t url: 'test?id=1&name=uniapp$0';",
+                "\turl: 'test?id=1&name=uniapp$0'",
             "});$0"
         ],
         "description": "uniapp-关闭所有页面，打开到应用内的某个页面"
@@ -202,7 +202,7 @@
         "prefix": "uni.switchTab()",
         "body": [
             "uni.switchTab({",
-                "\t url: '/pages/index/index$0';",
+                "\turl: '/pages/index/index$0'",
             "});$0"
         ],
         "description": "uniapp-跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面"
@@ -211,7 +211,7 @@
         "prefix": "uni.navigateBack()",
         "body": [
             "uni.navigateBack({",
-                "\t delta: 2$0",
+                "\tdelta: 2$0",
             "});"
         ],
         "description": "uniapp-关闭当前页面，返回上一页面或多级页面"
@@ -220,7 +220,7 @@
         "prefix": "uni.navigateBack()",
         "body": [
             "uni.navigateBack({",
-                "\t delta: 2$0",
+                "\tdelta: 2$0",
             "});"
         ],
         "description": "uniapp-关闭当前页面，返回上一页面或多级页面"
